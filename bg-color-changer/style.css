@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+}
+
+.footer-container {
+}
+
+#footer {
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+    height: 100vh;
+    background: red;
+}
+
+#container {
+    background: linear-gradient(to top, #eacda3, #d6ae7b);
+    margin: 0px 30px;
+    border-radius: 68px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0
+}
+
+.color-change-button {
+    margin: 16px 20px;
+    height: 54px;
+    width: 100px;
+    border-radius: 32px;
+    font-size: larger;
+    border-style: none;
+    box-shadow: 0px 0px 5px black;
+    cursor: pointer;
+}
+
+.custom-color-change {
+    margin: 16px 20px;
+    height: 54px;
+    width: 100px;
+    border-radius: 32px;
+    font-size: larger;
+    border-style: none;
+    box-shadow: 0px 0px 5px black;
+    cursor: pointer;
+}
