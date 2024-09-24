@@ -7,16 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="footer-container">
-    <section id="footer">
+  <div class="button-panel-container">
+    <section id="button-panel">
       <div id="container">
         <button type="button" class="color-change-button" onclick="changeBackgroundColor('red')">Red</button>
         <button type="button" class="color-change-button" onclick="changeBackgroundColor('green')">Green</button>
         <button type="button" class="color-change-button" onclick="changeBackgroundColor('blue')">Blue</button>
         <button type="button" class="color-change-button" onclick="changeBackgroundColor('yellow')">Yellow</button>
-        <button type="button" class="custom-color-change" onclink="">Custom</button>
+        <button type="button" class="custom-color-button" onclink="togglePanel()">Custom</button>
+        <button type="button" class="color-change-button" onclick="changeBackgroundColor('white')">Default</button>
       </div>
     </section>
+  </div>
+  <div id="custom-color-panel" class="closed">
+       <input id="custom-color-inputBar" type="text" placeholder="Custom color">
   </div>
 </body>
 <script src="script.js"></script>
