@@ -2,10 +2,11 @@ body {
     margin: 0;
 }
 
-.footer-container {
+.button-panel-container {
+    z-index: 1;
 }
 
-#footer {
+#button-panel {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -37,7 +38,7 @@ body {
     cursor: pointer;
 }
 
-.custom-color-change {
+.custom-color-button {
     margin: 16px 20px;
     height: 54px;
     width: 100px;
@@ -46,4 +47,27 @@ body {
     border-style: none;
     box-shadow: 0px 0px 5px black;
     cursor: pointer;
+}
+
+#custom-color-panel {
+    background-color: blue;
+    position: fixed;
+    top: 24px;
+    right: 0;
+    width: 33.33%;
+    height: 90%;
+    margin: 0 12px;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+#custom-color-inputBar {
+    width: 160px;
+    border-radius: 4px;
+    border-style: none;
+    padding: 10px 20px;
+    font-size: medium;
+    font-weight: bold;
+    width: 85%;
 }
