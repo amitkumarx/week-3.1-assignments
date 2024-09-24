@@ -6,9 +6,9 @@ body {
 }
 
 #footer {
-    display: flex; 
-    justify-content: flex-end; 
-    align-items: center; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     height: 100vh;
     background: red;
 }
@@ -16,7 +16,7 @@ body {
 #container {
     background: linear-gradient(to top, #eacda3, #d6ae7b);
     margin: 0px 30px;
-    border-radius: 68px;
+    border-radius: 20px;
     border-style: solid;
     border-width: 2px;
     border-color: gainsboro;
@@ -30,8 +30,8 @@ body {
     margin: 16px 20px;
     height: 54px;
     width: 100px;
-    border-radius: 32px;
-    font-size: larger;
+    border-radius: 8px;
+    font-size: medium;
     border-style: none;
     box-shadow: 0px 0px 5px black;
     cursor: pointer;
@@ -41,8 +41,8 @@ body {
     margin: 16px 20px;
     height: 54px;
     width: 100px;
-    border-radius: 32px;
-    font-size: larger;
+    border-radius: 8px;
+    font-size: medium;
     border-style: none;
     box-shadow: 0px 0px 5px black;
     cursor: pointer;
