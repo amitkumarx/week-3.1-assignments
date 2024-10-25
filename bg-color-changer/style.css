@@ -2,19 +2,19 @@ body {
     margin: 0;
 }
 
-.button-panel-container {
+.container {
     z-index: 1;
 }
 
-#button-panel {
+#bg-panel {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     height: 100vh;
-    background: red;
+    background: white;
 }
 
-#container {
+#panel-container {
     background: linear-gradient(to top, #eacda3, #d6ae7b);
     margin: 0px 30px;
     border-radius: 20px;
@@ -53,7 +53,6 @@ body {
     background-color: #121212;
     position: fixed;
     top: 24px;
-    right: 0;
     width: 33.33%;
     height: 90%;
     margin: 0 12px;
@@ -61,10 +60,18 @@ body {
     box-sizing: border-box;
     z-index: 2;
     border-radius: 8px;
+    transition: right 300ms ease;
+}
+
+.closed {
+    right:-35%;
+}
+
+.opened {
+    right: 0;
 }
 
 #custom-color-inputBar {
-    width: 160px;
     border-radius: 4px;
     border-style: none;
     padding: 10px 20px;
@@ -74,8 +81,8 @@ body {
     margin-right: 10px;
 }
 
-.input-color-box {
-    background-color: #ffffff;
+#input-color-box {
+    background: #ffffff;
     border-style: solid;
     border-width: 1px;
     border-color:#d6ae7b;
@@ -104,7 +111,7 @@ body {
     color: #ccc3c3
 }
 
-.confirm-customColor-button {
+.confirm-button {
     margin-top: 80px;
     margin-left: 38%;
     border-style: none;
@@ -118,7 +125,7 @@ body {
     cursor: pointer;
 }
 
-.confirm-customColor-button:hover {
+.confirm-button:hover {
     background-color:#696666;
     color: #ccc3c3
-} 
+}

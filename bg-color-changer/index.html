@@ -7,25 +7,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="button-panel-container">
-    <section id="button-panel">
-      <div id="container">
+  <div class="container">
+    <section id="bg-panel">
+      <div id="panel-container">
         <button type="button" class="color-change-button" onclick="changeBackgroundColor('red')">Red</button>
         <button type="button" class="color-change-button" onclick="changeBackgroundColor('green')">Green</button>
         <button type="button" class="color-change-button" onclick="changeBackgroundColor('blue')">Blue</button>
         <button type="button" class="color-change-button" onclick="changeBackgroundColor('yellow')">Yellow</button>
-        <button type="button" class="custom-color-button" onclink="togglePanel()">Custom</button>
+        <button type="button" class="custom-color-button" onclick="togglePanel()">Custom</button>
         <button type="button" class="color-change-button" onclick="changeBackgroundColor('white')">Default</button>
       </div>
     </section>
   </div>
   <div id="custom-color-panel" class="closed">
-    <div class="input-color-box"></div>
+    <div id="input-color-box"></div>
     <div class="colorInput">
        <input id="custom-color-inputBar" type="text" placeholder="Custom color">
-       <button type="button" class="color-check-button">TRY</button>
+       <button type="button" class="color-check-button" onclick="colorCheck()">TRY</button>
     </div>
-       <button type="button" class="confirm-customColor-button">I LIKE THIS</button>
+       <button type="button" class="confirm-button" onclick="selectColor()">I LIKE THIS</button>
   </div>
 </body>
 <script src="script.js"></script>
